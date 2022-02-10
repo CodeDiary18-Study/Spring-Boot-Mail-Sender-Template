@@ -1,0 +1,17 @@
+server:
+  port: 8000 # 8000번 포트로 실행
+
+spring:
+  application:
+    name: mail_template
+
+  mail: # 메일 설정
+    host: smtp.gmail.com
+    port: 587
+    username: {계정 메일 주소}
+    password: {계졍 비밀번호}
+    nickname: {닉네임}
+    debug: false
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
