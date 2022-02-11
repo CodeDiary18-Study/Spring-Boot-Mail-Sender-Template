@@ -10,8 +10,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @JsonPropertyOrder({"isSuccess", "message"})
-public class Res {
+public class Res<T> {
     @JsonProperty("isSuccess")
     private boolean isSuccess;
-    private String message;
+    private T message;
 }
